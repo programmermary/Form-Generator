@@ -1,9 +1,10 @@
 import React from 'react'
+import Login from './layout/Login'
 function App() {
-  console.log('this is dev')
+  
   return (
-   <div className='bg-black'>
-    <h1>this is dev </h1>
+   <div className=''>
+    <Login/>
    </div>
   )
 }
