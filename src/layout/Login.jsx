@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { FaEnvelope, FaLock, FaApple } from 'react-icons/fa';
 import { HiEye, HiEyeOff } from 'react-icons/hi';
 import { FcGoogle } from 'react-icons/fc';
+import { Link } from "react-router-dom";
+
+
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -49,9 +52,9 @@ const Login = () => {
         </div>
 
         <div className="w-80 flex justify-end mt-2">
-          <a href="#" className="text-[#7050EF] text-sm no-underline" style={{ color: '#7050EF', textDecoration: 'none' }}>
+          <Link  to="#" className="text-[#7050EF] text-sm no-underline" style={{ color: '#7050EF', textDecoration: 'none' }}>
             Forget Password?
-          </a>
+          </Link >
         </div>
 
         <button className="bg-[#7050EF] text-white rounded-2xl w-80 p-3 mt-3 hover:bg-[#6040DF] focus:outline-none focus:ring-2 focus:ring-[#7050EF]">
@@ -71,9 +74,9 @@ const Login = () => {
 
         <div className="flex flex-row items-center mt-3 space-x-2">
           <p className="text-gray-600">Don't Have an Account?</p>
-          <a href="#" className="text-[#7050EF] font-semibold mb-3" style={{ color: '#7050EF', textDecoration: 'none' }}>
+          <Link  to="/signup" className="text-[#7050EF] font-semibold mb-3" style={{ color: '#7050EF', textDecoration: 'none' }}>
             Join us
-          </a>
+          </Link >
         </div>
       </div>
     </div>
