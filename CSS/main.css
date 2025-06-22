@@ -1,0 +1,127 @@
+:root{
+    --main-color: #7050EF
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+.container-fluid .text{
+    grid-column: span 6;
+    position: relative;
+    color: white;
+    background-color: var(--main-color);
+}
+.container-fluid .text .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 66px;
+    left: 108px;
+    background-color: #d9d9d9
+}
+.container-fluid .text h1{
+    position: absolute;
+    font-size: 64px;
+    top: 50%;
+    left: 108px;
+}
+.container-fluid .signing{
+    grid-column: span 5;
+}
+.container-fluid .signing .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 360px;
+    margin: auto;
+}
+.container-fluid .signing .parent .sign{
+    align-self: start;
+    margin-bottom: 45px;
+}
+.container-fluid .signing .parent .sign p:first-of-type{
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.container-fluid .signing .parent .sign p:last-of-type{
+    color: #71717A
+}
+.container-fluid .signing .parent .margin{
+    margin-bottom: 29px;
+}
+.container-fluid .signing .parent .input{
+    width: 360px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 2px var(--main-color) solid;
+    align-content: center;
+}
+.container-fluid .signing .parent .input i{
+    color: var(--main-color);
+    width: 16px;
+    font-size: 20px;
+}
+.container-fluid .signing .parent .input #togglePassword{
+    display: none;
+}
+.container-fluid .signing .parent .input input{
+    margin-left: 5px;
+    width: 85%;
+    outline: none;
+    border: none
+}
+.signing .parent .forget{
+    transform: translateX(77%);
+    margin: 10px 20px 30px;
+    color: #3F65FF;
+}
+.signing .parent button {
+    width: 348px;
+    height: 60px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.signing .parent .sign-with{
+    align-self: start;
+    margin-top: 25px;
+    margin-left: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    align-items: center;
+}
+.signing .parent .sign-with p{
+    margin-top: 14px;
+    font-size: 18px;
+}
+.signing .parent .sign-with i{
+    width: 45px;
+    height: 45px;
+    padding: 9px 11px;
+    font-size: 24px;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 50%;
+}
